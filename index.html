@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MacaronShop - Главная</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+    <script src="trash.js"></script>
+</head>
+<header>
+    <div class="mainheader">
+        <div class="header">
+            <a href=""><img src = "src/go.svg"></a>
+            <div class="logo">
+                <img src = "src/headerlogo.svg">
+                <text>МИНДАЛЬНАЯ МУКА И НАТУРАЛЬНЫЕ ИНГРЕДИЕНТЫ</text>
+            </div>
+            <a id="goright" href=""><img src = "src/go.svg"></a>
+        </div>
+        <div class="secondheader">
+            <div class="navigation">
+                <a class="navbutton" href="#">Гарантия свежести</a>
+                <a class="navbutton" href="#">Доставка и оплата</a>
+                <a class="navbutton" href="#">Оптовые поставки</a>
+                <a class="navbutton" href="#house">Контакты</a>
+            </div>
+            <div class="contactsheader">
+                <div class="dropdown">
+                    <div id="placechose">
+                        <img src="src/place.svg">
+                        <a href="" style="text-decoration: none;">
+                            <text id="placetext" >Санкт-Петербург</text>
+                            <img src="src/placechose.svg">
+                        </a>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#" id="moscow">Москва</a>
+                        <a href="#" id="krasnodar">Краснодар</a>
+                        <a href="#" id="rostov">Ростов</a>
+                        <a href="#" id="kaliningrad">Калининград</a>
+                        <a href="#" id="sochi">Сочи</a>
+                        <a href="#" id="kazan">Казань</a>
+                        <a href="#" id="novosib">Новосибирск</a>
+                    </div>
+                </div>
+                <div id="phone">
+                    <img src="src/phone.svg">
+                    <text id="contactstext">8 812 309-82-88</text>
+                </div>
+                <div id="products">
+                    <img src="src/productic.svg">   
+                    <a id="trashtext" href="">В корзине (0 товаров)</a>
+                </div>
+                <a href=""><img class="linkitems" src="src/tg.svg"></a>
+                <a href=""><img class="linkitems" src="src/vk.svg"></a>
+                <a href=""><img class="linkitems" src="src/ok.svg"></a>
+            </div>
+        </div>
+        <div class="underheader">
+            <div class="kitbuttons">
+                <a class="addkit" href="#supersales">
+                    <text>СЛАДКИЕ ДНИ</text>
+                    <img src="src/sale.svg">
+                </a>
+                <div class="dropdown">
+                    <a class="addkit" href="#popularkits">
+                        <text>подарочные наборы</text>
+                        <img src="src/placechose.svg">
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#openModal" onclick="openclosemodal()">Сердце</a>
+                        <a href="#openModal" onclick="openclosemodal()">Красота спасёт мир</a>
+                        <a href="#openModal" onclick="openclosemodal()">Круглый набор</a>
+                        <a href="#openModal" onclick="openclosemodal()">Набор на 9</a>
+                        <a href="#openModal" onclick="openclosemodal()">Набор на 16</a>
+                    </div>
+                </div>
+                <a href="#" class="addkit">Собрать набор</a>
+            </div>
+            <img src="src/logo.svg">
+            <div class="designbuttons">
+                <a href="" class="makedesign">Создать дизайн</a>
+                <div class="dropdown">
+                    <a class="makedesign" href="">
+                        <text>КОМПАНИЯМ</text>
+                        <img src="src/placechose.svg">
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Корпоративные подарки</a>
+                        <a href="#">Для юридических лиц</a>
+                        <a href="#">Оптовикам</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="makedesign" href="">
+                        <text>ВЕСЬ КАТАЛОГ</text>
+                        <img src="src/placechose.svg">
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Каталог десертов</a>
+                        <a href="#">Готовые наборы</a>
+                        <a href="#">Собрать свой набор</a>
+                        <a href="#">Акции</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div id="macaronshop">
+        <p id="macarontitle">Macaronshop</p>
+        <div id="macaronundertitle">
+            <img id="line" src="src/line.svg">
+            <text>since 2013</text>
+            <img id="line" src="src/line.svg">
+        </div>
+        <div>
+            <p id="theme">Настоящая любовь</p>
+            <text id="undertheme">Пирожные макарон и другие десерты<br> из натуральных ингредиентов, приготовленные с любовью</text>
+        </div>
+    </div>
+    <div class="liar">
+        <div class="liarblocks">
+            <div class="liarline">
+                <a href="" style="text-decoration: none;">
+                    <div class="liarblock" style="background: url(src/block1.svg);">
+                        <img src="src/item1.svg">
+                        <text class="itemtitle">Готовые наборы <img src="src/goto.svg"></text>
+                        <text class="itemtext">Готовые наборы со скидкой.<br>Вы можете подобрать набор на подходящий случай.</text>
+                    </div>
+                </a>
+                <a href="" style="text-decoration: none;">
+                    <div class="liarblock" style="background: url(src/block2.svg);">
+                        <img src="src/item2.svg">
+                        <text class="itemtitle">Собрать свой набор <img src="src/goto.svg"></text>
+                        <text class="itemtext">Выбрать количество макарун, и выбрать вкусы</text>
+                    </div>
+                </a>
+            </div>
+            <div class="liarline">
+                <a href="" style="text-decoration: none;">
+                    <div class="liarblock" style="background: url(src/block3.svg);">
+                        <img src="src/item3.svg">
+                        <text class="itemtitle">Набор с индивидуальной печатью <img src="src/goto.svg"></text>
+                        <text class="itemtext">Собрать набор макарон с уникальным дизайном. </text>
+                    </div>
+                </a>
+                <a href="" style="text-decoration: none;">
+                    <div class="liarblock" style="background: url(src/block4.svg);">
+                        <img src="src/item4.svg">
+                        <text class="itemtitle">Свадебные предложения <img src="src/goto.svg"></text>
+                        <text class="itemtext">Нежные пирожные макаронс с разными вкусами для<br>украшения вашего свадебного торжества</text>
+                    </div>
+                </a>
+            </div>
+            <div class="liarline">
+                <a href="" style="text-decoration: none;">
+                    <div class="liarblock" style="background: url(src/block5.svg);">
+                        <img src="src/item5.svg">
+                        <text class="itemtitle">Корпоративные подарки <img src="src/goto.svg"></text>
+                        <text class="itemtext">От 85 руб за шт. С уникальным дизайном.<br>Приятный комплимент для коллег и партнеров</text>
+                    </div>
+                </a>
+                <a href="" style="text-decoration: none;">
+                    <div class="liarblock" style="background: url(src/block6.svg);">
+                        <img src="src/item6.svg">
+                        <text class="itemtitle">Оптовые поставки <img src="src/goto.svg"></text>
+                        <text class="itemtext">Предложение для кофеен, кафе, отелей и т.д.<br>Посмотрите условия сотрудничества и отзывы.</text>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="supersales">
+        <h1 id="supersalestitle">Акции</h1>
+        <a href="" id="supersalesfirstblock">
+            <img id="salebackground" src="src/1sale.svg">
+            <img id="saleborder" src="src/freedelivery.svg">
+            <text id="saletext">По СПб в районе КАД –  от 3000₽<br>По МСК – от 5000₽</text>
+        </a>
+        <a href="" id="supersalessecondblock">
+            <img id="salebackground" src="src/2sale.svg">
+            <img id="saleborder" src="src/new.svg">
+            <text id="saletext">Шоколадное пирожное картошка на основе бисквита!</text>
+        </a>
+        <a href="" id="supersalesthirdblock">
+            <img id="salebackground" src="src/3sale.svg">
+            <img id="saleborder" src="src/new.svg">
+            <text id="saletext">Аппетитные конфеты на основе миндального печенья и крема</text>
+        </a>
+        <a href="" id="supersalesfourthblock">
+            <img id="salebackground" src="src/4sale.svg">
+            <img id="saleborder" src="src/tastynew.svg">
+            <text id="saletext">Карамель на палочке из натуральных ингредиентов</text>
+        </a>
+    </div>
+    <div class="closerholiday">
+        <h1 id="supersalestitle">Ближайшие праздники</h1>
+        <div class="holidaysblocks">
+            <div class="holidayblock">
+                <img class="holidayimg" src="src/1holiday.svg">
+                <text class="holidaydesc">Скоро<br>День рождения<br>близкого человека </text>
+            </div>
+            <div class="holidayblock">
+                <img class="holidayimg" src="src/2holiday.svg">
+                <text class="holidaydesc">1 января<br>Новый Год<br>2021</text>
+            </div>
+            <div class="holidayblock">
+                <img class="holidayimg" src="src/3holiday.svg">
+                <text class="holidaydesc">14 февраля<br>День Святого<br>Валентина</text>
+            </div>
+            <div class="holidayblock">
+                <img class="holidayimg" src="src/4holiday.svg">
+                <text class="holidaydesc">23 февраля<br> День Защитника<br>Отечества</text>
+            </div>
+            <div class="holidayblock">
+                <img class="holidayimg" src="src/5holiday.svg">
+                <text class="holidaydesc">8 марта <br>Международный<br>Женский День</text>
+            </div>
+            <div class="holidayblock">
+                <img class="holidayimg" src="src/6holiday.svg">
+                <text class="holidaydesc">9 марта<br> День Сурка</text>
+            </div>
+        </div>
+    </div>
+    <div id="popularkits">
+        <h1 id="supersalestitle">Популярные наборы</h1>
+        <div class="popularkitsblocks">
+            <div class="popularkitsline">
+                <div class="popularkit">
+                    <img class="popularimg" src="src/1popular.svg">
+                    <text class="populartitle">Сердце</text>
+                    <text class="populardesc">24 штуки в коробке в виде сердца.<br>Ассорти из 6 вкусов </text>
+                    <div class="popularprice">
+                        <text class="pricetext">2800 руб</text>
+                        <div id="products">
+                            <img src="src/productic.svg">   
+                            <a id="contactstext" href="#openModal">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popularkit">
+                    <img class="popularimg" src="src/2popular.svg">
+                    <text class="populartitle">Красота спасёт мир</text>
+                    <text class="populardesc">Набор 16 шт. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан</text>
+                    <div class="popularprice">
+                        <text class="pricetext">750 руб</text>
+                        <div id="products">
+                            <img src="src/productic.svg">   
+                            <a id="contactstext" href="#openModal" onclick="openclosemodal()">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popularkit">
+                    <img class="popularimg" src="src/3popular.svg">
+                    <text class="populartitle">Круглый набор</text>
+                    <text class="populardesc">40 макаронс в круглой коробке с персональной надписью</text>
+                    <div class="popularprice">
+                        <text class="pricetext">3900 руб</text>
+                        <div id="products">
+                            <img src="src/productic.svg">   
+                            <a id="contactstext" href="#openModal" onclick="openclosemodal()">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popularkitsline">
+                <div class="popularkit">
+                    <img class="popularimg" src="src/4popular.svg">
+                    <text class="populartitle">Набор на 9</text>
+                    <text class="populardesc">Набор из 9 штук в квадратной коробке. Вкусы: шоколад, фисташка, вишня</text>
+                    <div class="popularprice">
+                        <text class="pricetext">950 руб</text>
+                        <div id="products">
+                            <img src="src/productic.svg">   
+                            <a id="contactstext" href="#openModal" onclick="openclosemodal()">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popularkit">
+                    <img class="popularimg" src="src/5popular.svg">
+                    <text class="populartitle">Набор на 16</text>
+                    <text class="populardesc">Набор 16 шт. Вкусы: соленая карамель, голубой сыр, пармезан, шоколад </text>
+                    <div class="popularprice">
+                        <text class="pricetext">1500 руб</text>
+                        <div id="products">
+                            <img src="src/productic.svg">   
+                            <a id="contactstext" href="#openModal" onclick="openclosemodal()">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popularkit">
+                    <img class="popularimg" src="src/1popular.svg">
+                    <text class="populartitle">Сердце</text>
+                    <text class="populardesc">24 штуки в коробке в виде сердца.<br>Ассорти из 6 вкусов </text>
+                    <div class="popularprice">
+                        <text class="pricetext">2500 руб</text>
+                        <div id="products">
+                            <img src="src/productic.svg">   
+                            <a id="contactstext" href="#openModal" onclick="openclosemodal()">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="openModal" class="modal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title">Корзина</h3>
+                      <a href="#close" title="Close" class="close">×</a>
+                    </div>
+                    <div class="modal-body">    
+                        <img src="src/true.svg"><text class="popularprice">Товар успешно добавлен в корзину</text>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <button class="showkitsbutton">Все праздничные наборы</button>
+        </div>
+    </div>
+    <div class="news">
+        <h1 id="supersalestitle">Новости</h1>
+        <div class="popularkitsblocks">
+            <div class="popularkitsline">
+                <div class="popularkit">
+                    <img class="popularimg" src="src/1news.svg">
+                    <text class="newsdate">25.02.2023</text>
+                    <text class="populartitle">Скоро главный праздник весны!</text>
+                    <text class="populardesc">Девушки любят, когда вкусно, красиво и натурально. Смотрите больше наборов с десертами ручной работы</text>
+                </div>
+                <div class="popularkit">
+                    <img class="popularimg" src="src/2news.svg">
+                    <text class="newsdate">17.02.2023</text>
+                    <text class="populartitle">Конкурс на 23 февраля!</text>
+                    <text class="populardesc">День Защитника Отечества уже совсем скоро! Порадуйте своего сладкоежку с помощью аппетитных наборов от МакаронШоп</text>
+                </div>
+                <div class="popularkit">
+                    <img class="popularimg" src="src/3news.svg">
+                    <text class="newsdate">11.02.2023</text>
+                    <text class="populartitle">Экспресс-конкурс ко дню Святого Валентина</text>
+                    <text class="populardesc">Подарок уже через 2 дняДень всех влюблённых не за горами. Расскажи о своих чувствах с помощью сладкой валентинки от МакаронШоп</text>
+                </div>
+            </div>
+            <button class="showkitsbutton">Все новости</button>
+        </div>
+    </div>
+    <div class="thanks">
+        <h1 id="supersalestitle">Мы обо всём позаботились</h1>
+        <div class="thanksline">
+            <div class="thankskit">
+                <img class="thanksimg" src="src/1thanks.svg">
+                <text class="thankstitle">Лучшие ингрединты</text>
+                <text class="thanksdesc">Что-то про суперкачество, лучших поваров, свежесть и т.д.</text>
+            </div>
+            <div class="thankskit">
+                <img class="thanksimg" src="src/2thanks.svg">
+                <text class="thankstitle">Упаковка</text>
+                <text class="thanksdesc">Что-то про суперкоробочки и бантики и бла бла бла</text>
+            </div>
+            <div class="thankskit">
+                <img class="thanksimg" src="src/3thanks.svg">
+                <text class="thankstitle">Получение в день заказа</text>
+                <text class="thanksdesc">В день заказа доставка курьером или самовывоз</text>
+            </div>
+            <div class="thankskit">
+                <img class="thanksimg" src="src/4thanks.svg">
+                <text class="thankstitle">Анонимная доставка</text>
+                <text class="thanksdesc">Можем преподнести Ваш заказ как анонимный подарок</text>
+            </div>
+        </div>
+    </div>
+    <div id="house">
+        <div class="housecolumn">
+            <div class="houseadress">
+                <div class="housecolumn">
+                    <img src="src/1under.svg">
+                    <text class="houseadresstext" style="height: 50px;">Готовим вручную<br>и с любовью</text>
+                </div>
+                <div class="housecolumn">
+                    <img src="src/2under.svg">
+                    <text class="houseadresstext" style="height: 50px;">Доставим<br>в день заказа</text>
+                </div>
+                <div class="housecolumn">
+                    <img src="src/3under.svg">
+                    <text class="houseadresstext" style="height: 50px;">100%<br>миндальная мука<br>и натуральные<br>ингредиенты</text>
+                </div>
+            </div>
+            <text class="houseadresstext" style="opacity: 0.7; width: 370px;">© 2021 Макароншоп<br>ООО "Квантум", Санкт-Петербург,  улица Маршала Тухачевского, дом 22
+                </text>
+        </div>
+        <div class="housecolumn">
+            <text class="housetitles">Информация</text>
+            <a class="infotext" href="">О компании</a>
+            <a class="infotext" href="">Гарантии вкуса и свежести</a>
+            <a class="infotext" href="">Доставка и оплата</a>
+            <a class="infotext" href="">Контакты</a>
+        </div>
+        <div class="housecolumn">
+            <text class="housetitles">Каталог</text>
+            <a class="infotext" href="">Каталог десертов</a>
+            <a class="infotext" href="">Готовые наборы</a>
+            <a class="infotext" href="">Собрать свой набор</a>
+            <a class="infotext" href="">Акции</a>
+        </div>
+        <div class="housecolumn">
+            <text class="housetitles">ДЛЯ БИЗНЕСА</text>
+            <a class="infotext" href="">Корпоративные подарки</a>
+            <a class="infotext" href="">Для юридических лиц</a>
+            <a class="infotext" href="">Оптовикам</a>
+        </div>
+        <div class="housecolumn">
+            <text class="housetitles">+7 (812) 309 82 88</text>
+            <text class="houseundertitle">с 9:00 до 21:00</text>
+            <div class="houseadress">
+                <img class="soc" src="src/instaunder.svg">
+                <img class="soc" src="src/faceunder.svg">
+                <img class="soc" src="src/vkunder.svg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
